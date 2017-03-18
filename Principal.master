@@ -1,0 +1,117 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Principal.master.cs" Inherits="Principal" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta name="Description" content="Aplicacion web UAC" />
+<meta name="Keywords" content="your, keywords" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Distribution" content="Global" />
+<meta name="Author" content="Hector Vargas" />
+<meta name="Robots" content="index,follow" />
+
+<link rel="stylesheet" href="images/Refresh.css" type="text/css" />
+<title> Unidad de Alergologia Clinica</title>
+      
+</head>
+<body>
+  <form runat = "server" 
+    
+    style="border-style: #CCCCCC; border-width: #CCCCCC; border-color: #CCCCCC; background-color: #CCCCCC;">
+  <asp:ScriptManager ID="ScriptManager1" runat="server" 
+      EnableScriptGlobalization="True">
+  </asp:ScriptManager>
+ 
+  
+    <div id="wrap">
+		
+		<!--header -->
+		<div id="header">			
+				
+			<h1 id="logo-text" style="font-family: 'Modern No. 20'"><span class="gray">UAC</span></h1>		
+			<h2 id="slogan" style="font-size: medium; font-family: 'Arial Narrow'">Unidad de 
+                Alergologia Clinica</h2>
+			
+		</div>
+		
+						
+			
+		
+		<div id="content-wrap">
+				
+			<div id="sidebar">
+					
+				<h1>Usuario</h1>
+				<div class="left-box">
+				 <asp:Label ID="Label5" runat="server" ForeColor="#0066CC"></asp:Label>
+				</div>
+			
+				<h1>Fecha:</h1>
+				<div class="left-box">
+				 <asp:Label ID="Label1" runat="server" ForeColor="#0066CC"></asp:Label>		
+				</div>
+				<h1>Cerrar Sesion</h1>
+				<div class="left-box">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Cerrar 
+                    Sesion</asp:HyperLink>
+				</div>
+				
+			</div>
+				
+			<div id="main">
+			<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                <table align="left">
+                    <tr>
+                        <td>
+                            &nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+        
+           </asp:ContentPlaceHolder>
+					
+        </div>
+		
+		<!-- content-wrap ends here -->	
+		</div>
+					
+		<!--footer starts here-->
+		<div id="footer">
+			
+                            <asp:Label ID="Label2" runat="server" ForeColor="#0066CC" 
+                                Text="Medicos  Especialistas en Alergologia Clinica    "></asp:Label>
+                            <asp:Label ID="Label3" runat="server" ForeColor="#0066CC" 
+                                Text="Universidad de Antioquia"></asp:Label>
+                            <br />
+                            <asp:Label ID="Label4" runat="server" ForeColor="#0066CC" 
+                                Text="Teleono: 3541940 Telefax: 3541942   Email: ricardona@une.net.co"></asp:Label>
+			
+		</div>	
+
+<!-- wrap ends here -->
+</div>
+
+
+ 
+  
+ </form>     
+</body>
+</html>
